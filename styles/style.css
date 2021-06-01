@@ -57,7 +57,10 @@ button {
   border-radius: 10px;
 }
 button:hover {
-  background-color: coral;
+  background-color: #934423;
+}
+button:focus {
+  background-color: #934423;
 }
 
 /* INSERT BUTTON STYLES HERE */
