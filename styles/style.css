@@ -42,6 +42,9 @@ article {
 
   /* Challenge: can you make the navigation links orange on hover? */
 }
+.nav-item {
+  padding: 20px;
+}
 
 /* Buttons */
 .donate {
@@ -52,7 +55,7 @@ article {
   color: #c05326;
 }
 button {
-  padding: 7px;
+  padding: 20px;
   border: 0;
   border-radius: 10px;
 }
