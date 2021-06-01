@@ -46,12 +46,10 @@ article {
 /* Buttons */
 .donate {
   background-color: #c05326;
-  
 }
 .volunteer {
-  background-color:#fff
-  color : #c05326;
-
+  background-color: #fff;
+  color: #c05326;
 }
 button {
   padding: 7px;
@@ -59,7 +57,7 @@ button {
   border-radius: 10px;
 }
 button:hover {
-  background-color:coral
+  background-color: coral;
 }
 
 /* INSERT BUTTON STYLES HERE */
