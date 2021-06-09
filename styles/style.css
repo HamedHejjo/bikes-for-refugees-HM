@@ -39,25 +39,33 @@ article {
   color: #292b2c;
   font-weight: 600;
   text-transform: uppercase;
-
-  /* Challenge: can you make the navigation links orange on hover? */
 }
-.nav-item {
-  padding: 20px;
+/* Challenge: can you make the navigation links orange on hover? */
+.navbar-nav .nav-item .nav-link:hover {
+  color: orange;
 }
+.nav-item a:active {
+  background-color: rgb(255, 51, 0);
+}
+/* .navbar-nav .nav-item .nav-link:visited {
+  color: #934423;
+} */
 
 /* Buttons */
 .donate {
   background-color: #c05326;
+  color: white;
 }
 .volunteer {
   background-color: #fff;
   color: #c05326;
 }
 button {
-  padding: 20px;
-  border: 0;
-  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
 }
 button:hover {
   background-color: #934423;
@@ -125,14 +133,24 @@ button:focus {
 }
 
 /* Article */
+.box-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.box-flex article {
+  margin: 10px;
+}
 
 .article {
   margin-bottom: 2em;
+  border: 1px solid rgb(204, 197, 197);
+  border-radius: 5px;
 }
 
 .article__image {
   object-fit: contain;
   width: 5rem;
+  padding: 5px 7px 5px 0px;
 }
 
 .article__title {
@@ -160,6 +178,9 @@ button:focus {
 .article__read-more:last-child {
   margin-bottom: 0;
 }
+aside article {
+  display: flex;
+}
 
 /* Footer */
 
@@ -179,4 +200,30 @@ button:focus {
   .navbar-brand > img {
     max-height: 80px;
   }
+}
+@media only screen and (max-width: 320px) {
+  .jumbotron h2 {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron > button {
+    font-size: small;
+  }
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* background-color: gray; */
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.flex button:first-child {
+  background-color: yellow;
+}
+
+.flex button:last-child {
+  background-color: #ff0000;
 }
