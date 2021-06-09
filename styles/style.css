@@ -180,6 +180,7 @@ button:focus {
 }
 aside article {
   display: flex;
+  padding: 10px 0;
 }
 
 /* Footer */
